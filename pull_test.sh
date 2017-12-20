@@ -4,7 +4,7 @@ SECONDS=0
 
 ### Usage
 function display_usage() {
-       	echo "=== Aqua Parallel Puller Test Utility ==="
+       	echo "=== Puller Test Utility ==="
        	echo -e "\nUsage:\n$0 [arguments] <image file>\n"
        	echo -e "Arguments:"
        	echo -e "  --pull_and_delete        Pull image and delete immidiatly"
