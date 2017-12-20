@@ -10,6 +10,6 @@ Usage:
 Arguments:
   --pull_and_delete        Pull image and delete immidiatly
   --pull_all_and_delete    Pull all images and then delete them
-
+  --just_pull              Pull all images
 
 Note: the <image file> is a text file with list of images - eacn image name in a seperate line.
