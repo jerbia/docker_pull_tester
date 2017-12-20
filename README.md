@@ -8,6 +8,7 @@ You can run the utility on multiple terminals, checking what is the impact of pu
 ./parallel.sh [arguments] <image file>
 
 **Arguments:**
+  
   --pull_and_delete        Pull image and delete immidiatly
   
   --pull_all_and_delete    Pull all images and then delete them
