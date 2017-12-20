@@ -9,7 +9,17 @@ function display_usage() {
        	echo -e "Arguments:"
        	echo -e "  --pull_and_delete        Pull image and delete immidiatly"
        	echo -e "  --pull_all_and_delete    Pull all images and then delete them"
+	echo -e "  --just_pull              Pull all images"
        	echo -e ""
+}
+
+### Just pull
+function just_pull() {
+       	while read IMAGE_NAME
+       	do
+       		echo "docker pull $IMAGE_NAME"
+       		docker pull $IMAGE_NAME
+   	done < $1
 }
 
 
@@ -45,6 +55,9 @@ then
 elif [ "$1" == "--pull_all_and_delete" ]
 then
        	pull_all_and_delete $2
+elif [ "$1" == "--just_pull" ]
+then
+       	just_pull $2
 else
         display_usage
         exit
